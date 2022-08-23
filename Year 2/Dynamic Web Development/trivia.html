@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Quiz</title>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <h1><a href="index.html">IQuiz</a> | Trivia Quiz</h1>
+        <!-- nav bar -->
+      </header>
+      <div id="startButton">
+        <button onclick="start()" class="button">Start!</button>
+      </div>
+      <div id="quiz">
+          <h2 id="qNo">Question</h2>
+          <p id="question" class="update"></p>
+          <div id="answer">
+            <button type="button" onclick="getAnsID(this)" id="a" class="update ansButton"></button>
+            <button type="button" onclick="getAnsID(this)" id="b" class="update ansButton"></button>
+            <button type="button" onclick="getAnsID(this)" id="c" class="update ansButton"></button>
+            <button type="button" onclick="getAnsID(this)" id="d" class="update ansButton"></button>
+          </div>
+          <div id="navButtons">
+            <button type="button" id="confirm" onclick="checkAns()">Confirm</button>
+            <button type="button" id="next" onclick="nextQuestion()">Next</button> <!-- Arrow on hover CSS -->
+            <button type="button" id="finish" onclick="finishQuiz()">Finish!</button>
+          </div>
+      </div>
+      <div id="scores">
+        <h3></h3>
+        <p id="scoreText"></p>
+        <button type="button" id="tryAgain"><a href="trivia.html">Try Again!</a></button>
+        <button type="button" id="exit" onclick="exitQuiz()"><a href="index.html">Exit</a></button>
+      </div>
+    </div> <!-- Wrapper End -->
+    <script src="js/quizFunctions.js"></script>
+  </body>

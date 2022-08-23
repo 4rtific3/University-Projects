@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+/*Styling to combine padding and margins in total width %*/
+
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	background-image: url("../images/villas.webp");
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+
+header {
+	text-align: center;
+	width: 100%;
+	background-color: aliceblue;
+}
+
+header h1 {
+    background-image: linear-gradient(to right, #009246, #FFFFFF, #CE2B37);
+    height: 100px;
+    font-family: italianno;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4em;
+    letter-spacing: 2px;
+}
+
+h1 {
+	margin: 0;
+	padding: 10px 0;
+}
+
+h1 a {
+	text-decoration: none;
+}
+
+h1 a:visited {
+	color: inherit;
+}
+
+h2 {
+	padding-top: 25px;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	clear: both;
+}
+
+h3 {
+	font-size: 24px;
+	margin: 0;
+	padding: 15px;
+}
+
+p {
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 15px;
+	text-align: justify;
+}
+
+#wrapper {
+	margin: 0;
+}
+
+#content {
+	overflow-y: auto;
+	width: 80%;
+	padding: 15px 50px;
+	padding-bottom: 75px;
+	margin: auto;
+	background-color: #fAFFF5;
+}
+
+#content div {
+	overflow: auto;
+}
+
+nav {
+	overflow: hidden;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+nav li {
+	float: left;
+	margin: auto;
+	width: 25%;
+}
+
+nav a {
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	font-size: 1.1em;
+	font-style: italic;
+	display: block;
+	padding: 15px 25px;
+	color: maroon;
+	text-decoration: none;
+	background: linear-gradient(to bottom, #FAFFF5 10%, palegoldenrod, #FAFFF5 90%);
+	transition-duration: 0.5s;
+}
+
+/*The a in .dropdown-content a is causing problems, but still outputs the correct style in the website*/
+nav a:hover:not(.thispage):not(.dropdown-content a) {
+    color: maroon;
+	background: linear-gradient(to bottom, #FAFFF5 13%, #eae295, #FAFFF5 87%);
+}
+
+nav a.thispage {
+	font-weight: bold;
+}
+
+li.dropbtn {
+    display: inline-block;
+}
+
+.dropdown-content {
+	width: inherit;
+	display: none;
+	position: absolute;
+	min-width: 180px;
+	z-index: 1; /*Places object in forefront of page*/
+	box-shadow: 7px 12px 10px 0px #7C7C7C;
+}
+
+.dropdown-content a {
+	background: none;
+	background-color: #FAFFF5;
+	color: maroon;
+	padding: 12px 15px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background: none;
+	background-color: #F7F5DA;
+}
+
+/*Shows the dropdown box when the parent link is hovered over*/
+.dropdown:hover .dropdown-content {
+  	display: block;
+}
+
+#headerimg {
+	position: relative;
+}
+
+#headerimg img {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	background-image: linear-gradient(to top, #00FFFFFF, #FAFFF5);
+}
+
+#headerimg p {
+	position: absolute;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+	bottom: 20px;
+	right: 20px;
+}
+
+.floatleft {
+	float: left;
+	margin: 5px 15px;
+	width: 33%;
+	max-width: 350px;
+}
+
+.floatright {
+	float: right;
+	margin: 5px 15px;
+	width: 33%;
+	max-width: 350px;
+}
+
+.images figure {
+	float: left;
+	margin: auto;
+	padding: 0 5px;
+	width: 33%;
+	max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+	font-size: 13px;
+	padding: 0;
+	margin: 0;
+}
+
+main {
+	float: left;
+	width: 80%;
+	padding-right: 15px;
+}
+
+aside {
+	float: left;
+	width: 20%;
+	padding-left: 15px;
+}
+
+aside button {
+	width: 50%;
+	min-width: 100px;
+	background-color: seagreen;
+	margin-left: 25%;
+	padding: 10px 25px;
+	border-radius: 5px;
+}
+
+aside button a {
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: bold;
+	color: white;
+}
+
+aside button:hover {
+	cursor: pointer;
+	color: white;
+}
+
+#b2t {
+	width: 100%;
+}
+
+#b2t a {
+	float: right;
+	font-size: 18px;
+	margin-top: 25px;
+	padding: 0;
+	text-decoration: none;
+	color: grey;
+	clear: both;
+}
+
+#b2t a:hover {
+	color: rebeccapurple;
+}
+
+footer {
+	clear: both;
+	background-color: #F4FFE9;
+	color: grey;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0;
+	border-top: thin solid grey;
+}
+
+footer a {
+	color: grey;
+}
+
+a i {
+	font-size: 20px;
+	margin: 0;
+	padding: 5px 7px 15px 7px;
+}
+
+a i.fa-facebook:hover {
+	color: darkblue;
+}
+
+a i.fa-instagram:hover {
+	color: hotpink;
+}
+
+a i.fa-twitter:hover {
+	color: deepskyblue;
+}
+
+a i.fa-youtube:hover {
+	color: crimson;
+}
+
+.checkItem {
+	border: solid grey thin;
+	margin: 10px 0;
+	padding: 1%;
+	height: 250px;
+}
+
+/* The container */
+.container {
+	display: block;
+	position: relative;
+	padding: 0;
+	margin: 0;
+	margin-top: 100px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 25px;
+	float: left;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+	background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+	left: 7px;
+	top: 0px;
+	width: 10px;
+	height: 20px;
+	border: solid white;
+	border-width: 0 4px 4px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+  }
+
+#checkboxForm figure {
+	width: 30%;
+	padding: 0;
+	margin: 0;
+}
+
+#checkboxForm img {
+	object-fit: cover;
+	width: 100%;
+	height: 225px;
+	float: left;
+}
+
+#checkboxForm button {
+	margin-top: 25px;
+	height: 25px;
+	background-color: seagreen;
+	color: white;
+	font-size: 15px;
+	border-radius: 5px;
+}
+
+.details {
+	float: left;
+	width: 55%;
+	padding-left: 5%;
+	margin: 0;
+	margin-right: 5%;
+	height: 225px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: block;
+  margin: 0;
+}
+
+#noPax {
+	float:left;
+	width: 50%;
+}
+
+label {
+	float: left;
+	width: 50%;
+	min-width: 100px;
+	margin: 5px 0;
+	padding: auto;
+	font-size: 15px;
+}
+
+input {
+	float: left;
+	width: 30%;
+	height: 30px;
+	margin: 5px 0;
+}
+
+#priceOutput {
+	float: right;
+	padding-right: 10%;
+}
+
+#priceOutput p {
+	margin: 0;
+	padding: 0;
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+#totalCost {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#description {
+	margin-bottom: 25px;
+}

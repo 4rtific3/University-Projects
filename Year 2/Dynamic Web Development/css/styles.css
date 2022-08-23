@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/* Standardising padding and margins */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* General css styles */
+header {
+  background-color: lightblue;
+}
+
+body {
+  margin: 0;
+  background-color: #EFF5F8;
+}
+
+h1 {
+  margin-top: 0;
+  padding: 30px 60px;
+  font-size: 3em;
+}
+
+h2 {
+  padding: 0 30px;
+}
+
+h3 {
+  font-size: 2.2em;
+  font-weight: bold;
+}
+
+#selection a {
+  background-color: gainsboro;
+  transition-duration: 0.5s;
+}
+
+/* Index css */
+
+h2.index {
+  text-align: center;
+  font-size: 2em;
+}
+
+#selection {
+  width: 100%;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
+#selection a {
+  display: block;
+  padding: 20px 0;
+  margin: 25px 33.33%;
+  color: black;
+  border-radius: 10px;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: none;
+  width: 33.33%;
+}
+
+#selection button:hover {
+  cursor: pointer;
+}
+
+#math a:hover {
+  color: white;
+  background-color: maroon;
+}
+
+#science a:hover {
+  color: white;
+  background-color: #5D8AA8;
+}
+
+#personality a:hover {
+  color: white;
+  background-color: pink;
+}
+
+#wordle a:hover {
+  color: white;
+  background-color: green;
+}
+
+
+/* Quiz css */
+
+button:hover {
+  cursor: pointer;
+}
+
+h1 a {
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+}
+
+#quiz button {
+  text-align: center;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+
+#quiz {
+  display: none
+}
+
+p {
+  margin-left: 30px;
+  font-size: 25px;
+}
+
+#answer button {
+  margin: 50px auto;
+  padding: 10px 10px;
+  display: block;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 20%;
+  min-width: 250px;
+}
+
+/* Box shadow code taken from
+https://codepen.io/ovdojoey/pen/BomKyZ*/
+#answer button:hover {
+  box-shadow: 0 0 11px teal;
+}
+
+#answer button:focus {
+  color: white;
+  background-color: teal;
+}
+
+#answer button:disabled {
+  box-shadow: none;
+  cursor: default;
+}
+
+#answer button.wrong {
+	color: white;
+	background-color: maroon;
+}
+
+#answer button.correct {
+  color: white;
+  background-color: green;
+}
+
+#startButton button {
+  display: block;
+  padding: 15px 30px;
+  margin: 10% 45%;
+  color: black;
+  background-color: white;
+  border-color: green;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: 500;
+  width: auto;
+  transition-duration: 0.3s;
+}
+
+#startButton button:hover {
+  background-color: green;
+  color: white;
+}
+
+#navButtons button {
+  float: right;
+  margin-right: 50px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px 20px;
+  width: 125px;
+}
+
+#scores {
+  text-align: center;
+}
+
+#scores button {
+  display: block;
+  height: 60px;
+  width: 20%;
+  min-width: 75px;
+  border-radius: 10px;
+  float: left;
+  margin: 50px 15%;
+  padding: 0;
+  transition-duration: 0.5s;
+}
+
+#scores button:hover {
+  background-color: teal;
+  color: white;
+}
+
+#scores a {
+  display: block;
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+  font-size: 1.5em;
+}
+
+#scores {
+  display: none;
+}

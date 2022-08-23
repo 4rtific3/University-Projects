@@ -1,0 +1,21 @@
+index.html as main page for quiz selection
+multiple pages for each quiz
+
+Quiz Ideas
+1. Multiple page
+2. Question Types
+  a. MCQ (Buttons!)
+  b. type insert? (coding questions)
+3. Inner Workings
+  a. getelementbyid & .innerHTML
+  b. header (Q no.), main (question), aside (answer selection)
+  c. for loop to cycle through questions
+  d. array for question bank
+  e. green or red upon answer Selection
+  f. confetti with correct answer
+4. question bank with random question selection?
+5. timer score, faster speed higher score
+  a. turns red when 3s or less
+6. final results page
+  a. try again button
+  b. score + witty comment using switch statement according to score
